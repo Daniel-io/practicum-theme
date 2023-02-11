@@ -1,0 +1,96 @@
+/* ==========================================================================
+   #CORE
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+/**
+* This core file sets up the most important setup variables. They
+* underpin a lot of how the framework functions and should be modified and
+* preconfigured with caution.
+*/
+
+
+
+
+
+   
+   
+   
+   
+   
+
+
+:root {
+
+
+
+
+    /*  Typeface
+   ========================================================================== */
+
+
+
+
+   --typeface-primary: 'Late', sans-serif;
+
+
+
+
+   /*  Base typographical styles and baseline grid.
+    ========================================================================== */
+
+
+
+
+    --global-font-size     :    100%;
+    --global-line-height   :    1.5;
+
+
+
+
+    /* Global spacing units
+    ========================================================================== */
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    /*  
+    * There are two rules to creating Vertical Rhythm:
+    *
+    * Set the spaces between each element to a multiple of the baseline
+    * Set the line-height of each text element to a multiple of the baseline
+    *
+    * It is not recommended that you modify these following variables.
+    * (it can break your vertical rhythm), but if you need to, you can.
+    */
+
+    --global-spacing-unit:      calc(var(--global-line-height) * 1rem);
+    --global-spacing-unit-xs:   calc(var(--global-spacing-unit) / 4);
+    --global-spacing-unit-sm:   calc(var(--global-spacing-unit) / 2);
+    --global-spacing-unit-lg:   calc(var(--global-spacing-unit) * 2);
+    --global-spacing-unit-xl:   calc(var(--global-spacing-unit) * 4);
+
+
+
+
+}
+
+
+
+
+
+

@@ -1,0 +1,27 @@
+<!--
+    templateType: global_partial
+    label: Header
+    isAvailableForNewContent: false
+-->
+
+
+<!-- Begin partial -->
+
+<header class"c-header">
+
+    <div class="o-wrapper">
+        <div class="row-fluid">
+            <div class="span6">
+                {% module "page_template_logo" path="@hubspot/logo" label="Logo" %}
+            </div>
+            <div class="span6">
+            {% module "header_headline" path="@hubspot/rich_text" label="Headline" html="<h1>Global Header</h1>" %}
+            </div>
+        </div>
+    </div>
+
+</header>
+
+<!-- End partial -->
+
+

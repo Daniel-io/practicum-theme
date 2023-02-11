@@ -19,6 +19,13 @@
 
 
 
+/* Settings */
+
+{% include './settings/_core.css' %}
+   
+
+
+
 
 /* Generic
 This is where reset, normalize & box-sizing styles go.
@@ -27,4 +34,15 @@ This is where reset, normalize & box-sizing styles go.
 {% include './generic/_box-sizing.css' %}
 {% include './generic/_normalize.css' %}
 {% include './generic/_reset.css' %}
+
+
+
+/* Objects
+Non-cosmetic design patterns including grid and layout classes)
+*/
+
+{% include './objects/_layout.css' %}
+{% include './objects/_wrappers.css' %}
+
+    
     
