@@ -55,7 +55,22 @@
 
 
 
+    /**
+    * Simple default styles for headings 1 through 6.
+    */
 
+
+    --font-size-h1:  2.25rem ;
+    --font-size-h2:  1.75rem ;
+    --font-size-h3:  1.5rem  ;
+    --font-size-h4:  1.25rem ;
+    --font-size-h5:  1.125rem;
+    --font-size-h6:  1rem    ;
+
+
+
+
+    
     /* Global spacing units
     ========================================================================== */
    
@@ -89,17 +104,6 @@
 
 
 
-    /**
-    * Simple default styles for headings 1 through 6.
-    */
-
-
-    --font-size-h1:  2.25rem   !default;
-    --font-size-h2:  1.75rem   !default;
-    --font-size-h3:  1.5rem    !default;
-    --font-size-h4:  1.25rem   !default;
-    --font-size-h5:  1.125rem  !default;
-    --font-size-h6:  1rem      !default;
 
 
 
