@@ -4,7 +4,6 @@
     isAvailableForNewContent: false
 -->
 
-
 <!-- Begin partial -->
 
 <footer class="c-footer">
@@ -41,7 +40,7 @@
                         width=4
                     %}
                         {% dnd_row %}
-                            {% dnd_module  path="@hubspot/menu", label="menu.module" %}
+                            {% dnd_module  path="@hubspot/menu", label="menu.module" id="100956662880"  %}
                             {% end_dnd_module %}
                         {% end_dnd_row %}
                     {% end_dnd_column %}
@@ -51,6 +50,9 @@
                      %}
                         {% dnd_row %}
                             {% dnd_module  "footer_template_text" path="@hubspot/rich_text" label="Footer rich text" %}
+                                {% module_attribute "html" %}
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+                                {% end_module_attribute %}
                             {% end_dnd_module %}
                         {% end_dnd_row %}
                     {% end_dnd_column %}

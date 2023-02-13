@@ -1,0 +1,67 @@
+
+
+/* ==========================================================================
+   #BAND
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+.o-band {
+  display: block;   
+  padding-top:  var(--global-spacing-unit); 
+  padding-bottom:  var(--global-spacing-unit); 
+}
+
+
+
+
+
+
+
+
+
+
+/* Size variants
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+.o-band--fl {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.o-band--xs {
+  padding-top: var(--global-spacing-unit-xs); 
+  padding-bottom: var(--global-spacing-unit-xs); 
+}
+  
+.o-band--sm {
+  padding-top: var(--global-spacing-unit-sm); 
+  padding-bottom: var(--global-spacing-unit-sm); 
+}
+  
+.o-band--lg {
+  padding-top: var(--global-spacing-unit-lg); 
+  padding-bottom: var(--global-spacing-unit-lg); 
+}
+
+.o-band--xl {
+  padding-top: var(--global-spacing-unit-xl); 
+  padding-bottom: var(--global-spacing-unit-xl); 
+}

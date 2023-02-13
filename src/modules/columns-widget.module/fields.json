@@ -1,1 +1,31 @@
-[ ]
+[ {
+  "id" : "af0b1d3c-31c0-a394-2075-60db14c0e895",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://8519398.fs1.hubspotusercontent-na1.net/hubfs/8519398/hero1.png",
+    "alt" : "hero1",
+    "loading" : "lazy",
+    "width" : 407,
+    "height" : 400,
+    "max_width" : 407,
+    "max_height" : 400
+  }
+}, {
+  "id" : "af512cfe-140e-c16b-98c4-91e0f59871a5",
+  "name" : "richtext_field",
+  "display_width" : null,
+  "label" : "Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h2>Something Powerful</h2>\n<h3>Tell The Reader More</h3>\n<p>The headline and subheader tells us what you're<span>&nbsp;</span><a href=\"https://8519398.hubspotpreview-na1.com/#\">offering</a>, and the form header closes the deal. Over here you can explain why your offer is so great it's worth filling out a form for.</p>\n<p>Remember:</p>\n<ul>\n<li>Bullets are great</li>\n<li>For spelling out<span>&nbsp;</span><a href=\"https://8519398.hubspotpreview-na1.com/#\">benefits</a><span>&nbsp;</span>and</li>\n<li>Turning visitors into leads.</li>\n</ul>"
+} ]
