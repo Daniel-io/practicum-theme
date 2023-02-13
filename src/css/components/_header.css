@@ -1,0 +1,14 @@
+.c-header {
+    background-color: #EDAE49;
+}
+
+.c-header ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.c-header a {
+    text-decoration: none;
+    font-weight: bold;
+}

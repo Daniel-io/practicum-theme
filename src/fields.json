@@ -7,5 +7,23 @@
             "color": "#444"
         }
 
+    },
+    {
+        "label": "Footer Color",
+        "name":  "footer_color",
+        "type":  "color",
+        "default": {
+            "color": "#F9EDCC"
+        }
+
+    },
+    {
+        "label": "Footer Text Color",
+        "name":  "footer_text_color",
+        "type":  "color",
+        "default": {
+            "color": "#61210F"
+        }
+
     }
 ]
