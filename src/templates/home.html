@@ -8,28 +8,12 @@
 {% extends "./layouts/base.html" %}
 {% block body %}
 
+  {% dnd_area "no_structure" label="No Structure" %}
 
-  <div class="o-wrapper">
-    {% module "module_167635062284721" path="/Daniel/practicum-theme/modules/heading", label="heading" 
-      title="Lorem ipsum dolor " 
-      style={
-          "textalignment_field": {
-             "text_align": "CENTER"
-          },
-          "spacing_field" : {
-                "padding": {
-                   "top": {
-                    "value": 50,
-                    "units": "px"
-                   }
-           }
-        }
-      }
+      {# HERO  #}
+      {% include_dnd_partial path='../sections/hero.html' %}
 
-    %}
-    {% module "module_16762607597702" path="/Daniel/practicum-theme/modules/columns-widget", label="columns-widget" %}
-  </div>
-
+  {% end_dnd_area %}
 
 {% endblock %}
 

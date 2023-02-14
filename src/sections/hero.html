@@ -1,0 +1,97 @@
+<!--
+    templateType: section
+    label: SectionHero
+    isAvailableForNewContent: true
+    screenshotPath: ../images/sections/hero-01.png
+    description: 'A hero with a heading, lead, cta(s), and and image on the right.'
+-->
+
+
+{% dnd_section
+    class="c-hero",
+    vertical_alignment="MIDDLE"
+%}
+
+    {# FULL WIDTH COLUMN CONTAINER  #}
+    {% dnd_column
+        width=12
+        offset=0,
+        margin={
+            'top': 32,
+            'bottom': 32
+        },
+        padding={
+            'top': 10,
+            'bottom': 10,
+            'left': 10,
+            'right': 10
+        },
+        max_width=1200,
+        vertical_alignment='TOP'
+    %}
+
+        {% dnd_row 
+            padding={
+                'top': 10,
+                'bottom': 10,
+                'left': 10,
+                'right': 10
+            },
+            vertical_alignment='TOP'
+        %}
+            {# ===== MODULE: HEADING  =====#}
+            {% dnd_module path="/Daniel/practicum-theme/modules/heading", label="heading" 
+                title="Lorem ipsum dolor " 
+                style={
+                "textalignment_field": {
+                    "text_align": "CENTER"
+                },
+                "spacing_field" : {
+                        "padding": {
+                            "top": {
+                            "value": 10,
+                            "units": "px"
+                            }
+                    }
+                }
+            }
+            %}
+            {% end_dnd_module %}
+            {# ===== END HEADING  =====#}
+        {% end_dnd_row %}
+
+
+
+
+
+        {% dnd_row 
+            padding={
+                'top': 10,
+                'bottom': 10,
+                'left': 10,
+                'right': 10
+            },
+            vertical_alignment='TOP'
+        %}
+            {# ===== MODULE: COLUMNS-WIDGET  =====#}
+            {% dnd_module  path="/Daniel/practicum-theme/modules/columns-widget", label="columns-widget" 
+                richtext_field="
+                    <h1>Section Custom: Something Powerful</h1>
+                    <h2>Section Custom: Tell The Reader More</h2>
+                    <p>The headline and subheader tells us what you're offering, and the form header closes the deal. Over here you can explain why your offer is so great it's worth filling out a form for.</p>
+                "
+             %}
+            {% end_dnd_module %}
+             {# ===== END HEADING  =====#}
+        {% end_dnd_row %}
+
+
+
+
+
+    {% end_dnd_column %}
+    {# /END FULL WIDTH COLUMN CONTAINER  #}
+
+
+
+{% end_dnd_section %}
