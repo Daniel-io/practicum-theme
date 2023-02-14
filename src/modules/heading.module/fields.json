@@ -1,0 +1,101 @@
+[ {
+  "id" : "f84d8302-978a-0270-69be-77465ec5849d",
+  "name" : "seo_tag",
+  "display_width" : null,
+  "label" : "SEO tag",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "h1", "h1" ], [ "h2", "h2" ], [ "h3", "h3" ], [ "h4", "h4" ], [ "h5", "h5" ], [ "h6", "h6" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "type" : "choice",
+  "default" : "h1"
+}, {
+  "id" : "2034682e-0ddd-3966-2c5e-11c0021522ae",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "f854e752-3f9b-17e9-9157-1a3499763626",
+    "name" : "textalignment_field",
+    "display_width" : null,
+    "label" : "Text alignment",
+    "required" : false,
+    "locked" : false,
+    "type" : "textalignment",
+    "default" : {
+      "text_align" : "LEFT"
+    }
+  }, {
+    "id" : "155f9ac0-eac6-1ee1-7638-21449b32a12a",
+    "name" : "spacing_field",
+    "display_width" : null,
+    "label" : "Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : {
+      "padding" : {
+        "top" : {
+          "value" : 10,
+          "units" : "px"
+        },
+        "bottom" : {
+          "value" : 10,
+          "units" : "px"
+        },
+        "left" : {
+          "value" : null,
+          "units" : null
+        },
+        "right" : {
+          "value" : null,
+          "units" : null
+        }
+      }
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "textalignment_field" : {
+      "text_align" : "LEFT"
+    },
+    "spacing_field" : {
+      "padding" : {
+        "top" : {
+          "value" : 10,
+          "units" : "px"
+        },
+        "bottom" : {
+          "value" : 10,
+          "units" : "px"
+        },
+        "left" : {
+          "value" : null,
+          "units" : null
+        },
+        "right" : {
+          "value" : null,
+          "units" : null
+        }
+      }
+    }
+  }
+}, {
+  "id" : "b4098d84-4461-b591-8f6f-f18c20fe8425",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Example Title"
+} ]

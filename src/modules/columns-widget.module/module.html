@@ -1,7 +1,7 @@
 {# nameId custom_id field of setting custom module or default name module filtered #}
 {% set nameId = module.settings.custom_id ? module.settings.custom_id : name|regex_replace("[^a-zA-Z0-9]","") %}
 {% set mainClass = 'c-column-widget' %}
-{% set classCssModule = [mainClass, name, 'instrumental-widget'] %}
+{% set classCssModule = [mainClass, name, 'practicum-widget'] %}
 {% do classCssModule.append(module.settings.custom_class) if module.settings.custom_class %}
 
 {% set classCssModule = classCssModule|join(' ') %}

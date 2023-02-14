@@ -1,0 +1,36 @@
+{# nameId custom_id field of setting custom module or default name module filtered #}
+{% set nameId = module.settings.custom_id ? module.settings.custom_id : name|regex_replace("[^a-zA-Z0-9]","") %}
+{% set mainClass = 'c-heading' %}
+{% set classCssModule = [mainClass, name] %}
+{% do classCssModule.append(module.settings.custom_class) if module.settings.custom_class %}
+
+
+
+<div id="{{ nameId }}" class="{{ classCssModule|join(' ') }}"> 
+  <{{ module.seo_tag }}>
+     {{ module.title }}
+  </{{ module.seo_tag }}>
+</div>
+
+
+   
+{# user styles #}
+{% set style_rules = [] -%}
+{%- do style_rules.append("{{ module.style.textalignment_field.css }}") if module.style.textalignment_field.css  -%}
+{%- do style_rules.append("{{ module.style.spacing_field.css }}") if module.style.spacing_field.css  -%}
+{%- set module_styles = style_rules|join(';') -%}
+  
+
+  
+  
+{% require_css %}
+
+  <style>
+    {% scope_css %}
+      .{{mainClass}} {
+        {{  module_styles  }}
+      }
+    {% end_scope_css %}
+  </style>
+
+{% end_require_css %}
