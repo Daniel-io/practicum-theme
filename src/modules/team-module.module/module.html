@@ -1,0 +1,22 @@
+{% set nameId = module.settings.custom_id ? module.settings.custom_id : name|regex_replace("[^a-zA-Z0-9]","") %}
+
+{# module class list #}
+{%- set module_classes = ['c-team-module', name] -%}
+  {%- do module_classes.append( module.settings.custom_classes ) if module.settings.custom_classes -%}
+{%- set module_classes = module_classes|join(' ') -%}
+
+<div id="{{ nameId }}" class="{{ module_classes }}">  
+  <div class="c-team-members">
+    {% for item in module.team_member_group %}    
+    <div class="c-team-member u-{{ loop.length }}">
+      <img class="c-team-module__img" src="{{ item.team_member.src }}" alt="{{ item.team_member.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+      {% inline_text field="team_member_name" value="{{ item.team_member_name }}" %}
+      {% inline_text field="team_member_title" value="{{ item.team_member_title }}" %}
+    </div>
+  {% endfor %}
+</div>
+
+
+
+
+

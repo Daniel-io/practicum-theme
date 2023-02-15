@@ -1,0 +1,184 @@
+[ {
+  "id" : "5356e7d4-42a9-f7ea-fd67-fc95dacd778d",
+  "name" : "team_member_group",
+  "display_width" : null,
+  "label" : "Team Member",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 9,
+    "sorting_label_field" : "",
+    "default" : 6
+  },
+  "children" : [ {
+    "id" : "32477562-fbe7-3e3c-d213-dd1d4eb3aaf8",
+    "name" : "team_member",
+    "display_width" : null,
+    "label" : "Team Member",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://8519398.fs1.hubspotusercontent-na1.net/hubfs/8519398/generic_user.svg",
+      "alt" : "generic_user",
+      "loading" : "lazy",
+      "width" : 800,
+      "height" : 800,
+      "max_width" : 800,
+      "max_height" : 800
+    }
+  }, {
+    "id" : "538918f7-8a84-c580-5f1b-976057828632",
+    "name" : "team_member_name",
+    "display_width" : null,
+    "label" : "Team Member Name",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Team Member Name"
+  }, {
+    "id" : "f9637cb2-45f9-c1eb-3629-0b5f145c4a9a",
+    "name" : "team_member_title",
+    "display_width" : null,
+    "label" : "Team Member Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Team Member Title"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "team_member" : {
+      "size_type" : "auto",
+      "src" : "https://8519398.fs1.hubspotusercontent-na1.net/hubfs/8519398/generic_user.svg",
+      "alt" : "generic_user",
+      "loading" : "lazy",
+      "width" : 800,
+      "height" : 800,
+      "max_width" : 800,
+      "max_height" : 800
+    },
+    "team_member_name" : "Team Member Name",
+    "team_member_title" : "Team Member Title"
+  }, {
+    "team_member" : {
+      "size_type" : "auto",
+      "src" : "https://8519398.fs1.hubspotusercontent-na1.net/hubfs/8519398/generic_user.svg",
+      "alt" : "generic_user",
+      "loading" : "lazy",
+      "width" : 800,
+      "height" : 800,
+      "max_width" : 800,
+      "max_height" : 800
+    },
+    "team_member_name" : "Team Member Name",
+    "team_member_title" : "Team Member Title"
+  }, {
+    "team_member" : {
+      "size_type" : "auto",
+      "src" : "https://8519398.fs1.hubspotusercontent-na1.net/hubfs/8519398/generic_user.svg",
+      "alt" : "generic_user",
+      "loading" : "lazy",
+      "width" : 800,
+      "height" : 800,
+      "max_width" : 800,
+      "max_height" : 800
+    },
+    "team_member_name" : "Team Member Name",
+    "team_member_title" : "Team Member Title"
+  }, {
+    "team_member" : {
+      "size_type" : "auto",
+      "src" : "https://8519398.fs1.hubspotusercontent-na1.net/hubfs/8519398/generic_user.svg",
+      "alt" : "generic_user",
+      "loading" : "lazy",
+      "width" : 800,
+      "height" : 800,
+      "max_width" : 800,
+      "max_height" : 800
+    },
+    "team_member_name" : "Team Member Name",
+    "team_member_title" : "Team Member Title"
+  }, {
+    "team_member" : {
+      "size_type" : "auto",
+      "src" : "https://8519398.fs1.hubspotusercontent-na1.net/hubfs/8519398/generic_user.svg",
+      "alt" : "generic_user",
+      "loading" : "lazy",
+      "width" : 800,
+      "height" : 800,
+      "max_width" : 800,
+      "max_height" : 800
+    },
+    "team_member_name" : "Team Member Name",
+    "team_member_title" : "Team Member Title"
+  }, {
+    "team_member" : {
+      "size_type" : "auto",
+      "src" : "https://8519398.fs1.hubspotusercontent-na1.net/hubfs/8519398/generic_user.svg",
+      "alt" : "generic_user",
+      "loading" : "lazy",
+      "width" : 800,
+      "height" : 800,
+      "max_width" : 800,
+      "max_height" : 800
+    },
+    "team_member_name" : "Team Member Name",
+    "team_member_title" : "Team Member Title"
+  } ]
+}, {
+  "id" : "ef4c6e9e-edbc-9dcc-b54e-ca33d187ea46",
+  "name" : "settings",
+  "display_width" : null,
+  "label" : "Advanced",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "086bb220-0e2d-ef2a-9089-a6b9cda841a5",
+    "name" : "custom_id",
+    "display_width" : null,
+    "label" : "Custom id",
+    "help_text" : "Name cannot not start with a number. Only use valid css characters.",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "[a-z][\\w-]*",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "my-custom-id-test-2"
+  }, {
+    "id" : "35d3de8e-edd2-30af-f1c0-46299d4f323d",
+    "name" : "custom_classes",
+    "display_width" : null,
+    "label" : "Custom Classes",
+    "help_text" : "You can have multiple class names. Names should not start with a number. Only use valid css characters.",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "validation_error_message" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "my-custom-class js-my-custom-class"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "custom_id" : "my-custom-id-test-2",
+    "custom_classes" : "my-custom-class js-my-custom-class"
+  }
+} ]
