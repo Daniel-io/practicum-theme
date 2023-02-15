@@ -9,7 +9,8 @@
 
 {% dnd_section
     class="c-hero",
-    vertical_alignment="MIDDLE"
+    vertical_alignment="MIDDLE",
+    background_color={{ context.background_color || "#ff8080" }}
 %}
 
     {# FULL WIDTH COLUMN CONTAINER  #}
@@ -20,16 +21,8 @@
             'top': 32,
             'bottom': 32
         },
-        padding={
-            'top': 10,
-            'bottom': 10,
-            'left': 10,
-            'right': 10
-        },
-        max_width=1200,
         vertical_alignment='TOP'
     %}
-
         {% dnd_row 
             padding={
                 'top': 10,

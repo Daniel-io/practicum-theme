@@ -11,7 +11,11 @@
   {% dnd_area "no_structure" label="No Structure" %}
 
       {# HERO  #}
-      {% include_dnd_partial path='../sections/hero.html' %}
+      {% include_dnd_partial path='../sections/hero.html'
+        context={
+         "background_color": "#87BBA2"
+        } 
+      %}
 
   {% end_dnd_area %}
 
