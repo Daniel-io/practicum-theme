@@ -25,9 +25,7 @@
 
 
 
-/* 
-{% set footer_bg_color = theme.footer.background.color %}
-{% set footer_font_color = theme.footer.text.color.color %} */
+
 
     
 
@@ -38,6 +36,24 @@
 {###########################################################################}
 
 
+.c-header {
+    background-color: {{ theme.header_color.color}};
+}
+
+.c-header p,
+.c-header h1,
+.c-header h2,
+.c-header h3,
+.c-header h4,
+.c-header h5,
+.c-header h6,
+.c-header label,
+.c-header span,
+.c-header li,
+.c-header img,
+.c-header a {
+    color: {{ theme.header_text_color.color}} !important;
+}
 
 
 .c-footer {

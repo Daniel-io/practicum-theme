@@ -58,6 +58,7 @@ Non-cosmetic design patterns including grid and layout classes)
 Base HMTL elements are styled in this section (<body>, <h1>, <a>, <p>, <button> etc.)
 */
 
+{% include './elements/_dnd-area.css' %}
 {% include './elements/_headings.css' %}
 {% include './elements/_page.css' %}
 

@@ -9,6 +9,24 @@
 
     },
     {
+        "label": "Header Color",
+        "name":  "header_color",
+        "type":  "color",
+        "default": {
+            "color": "#F9EDCC"
+        }
+
+    },
+    {
+        "label": "Header Text Color",
+        "name":  "header_text_color",
+        "type":  "color",
+        "default": {
+            "color": "#61210F"
+        }
+
+    },
+    {
         "label": "Footer Color",
         "name":  "footer_color",
         "type":  "color",
